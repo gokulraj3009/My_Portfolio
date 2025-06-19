@@ -3,6 +3,7 @@ import './hobby.css';
 import Music from '../../assets/music.png';
 import Gaming from '../../assets/gaming.avif';
 import Coding from '../../assets/coding.jpg';
+import Movie from '../../assets/movie.jpg';
 
 const hobbies = [
   {
@@ -19,6 +20,11 @@ const hobbies = [
     img: Coding,
     title: "Coding for Fun",
     desc: "I often experiment with new frameworks and build side projects."
+  },
+  {
+    img: Movie,
+    title: "Movie and Series watching",
+    desc: "I enjoy watching movies as a way to relax, explore different perspectives, and stay inspired by storytelling and creativity."
   }
 ];
 
