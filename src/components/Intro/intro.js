@@ -20,7 +20,8 @@ const Intro = () => {
         </p>
         <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
           <button className="btn">
-            <img src={btnImg} alt="Hire" className="btnImg" /> Hire Me
+            <img src={btnImg} alt="Hire" className="btnImg" /> Collaborate With
+            Me
           </button>
         </Link>
       </div>
