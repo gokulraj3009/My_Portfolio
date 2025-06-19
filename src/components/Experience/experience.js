@@ -4,18 +4,19 @@ import "./experience.css";
 const Experience = () => {
   const timelineData = [
     {
-      date: "May 3, 2023 – Aug 3, 2023",
-      title: "Intern",
-      company: "Virtusa",
-      description:
-        "Worked as a full stack intern gaining hands-on experience with .NET, React, and Oracle DB.",
-    },
-    {
       date: "Oct 19, 2023 – Present",
       title: "System Engineer",
       company: "Tata Consultancy Services",
       description:
         "Working as a full stack developer using .NET, React.js, and Oracle DB, focusing on feature enhancements, bug fixes, and end-to-end application development.",
+    },
+    
+    {
+      date: "May 3, 2023 – Aug 3, 2023",
+      title: "Intern",
+      company: "Virtusa",
+      description:
+        "Worked as a full stack intern gaining hands-on experience with .NET, React, and Oracle DB.",
     },
   ];
 

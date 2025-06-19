@@ -18,12 +18,23 @@ const Intro = () => {
           <br />
           with a passion for building scalable, user-centric web applications.
         </p>
-        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
-          <button className="btn">
-            <img src={btnImg} alt="Hire" className="btnImg" /> Collaborate With
-            Me
-          </button>
-        </Link>
+        <div className="btnContainer">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <button className="btn">
+              <img src={btnImg} alt="Hire" className="btnImg" />
+              Collaborate With Me
+            </button>
+          </Link>{" "}
+          <a href="/Gokulraj_P_Resume.pdf" download className="btn resumeBtn">
+            Resume
+          </a>
+        </div>
       </div>
       <img src={Me} alt="Profile" className="bg" />
     </section>
