@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./works.css";
 import Portfolio1 from "../../assets/programming1.jpg";
-
 
 const projectData = [
   {
@@ -13,6 +12,9 @@ const projectData = [
 ];
 
 const Works = () => {
+  const [showAll, setShowAll] = useState(false);
+  const cardsToShow = showAll ? projectData : projectData.slice(0, 6);
+
   return (
     <section id="works">
       <h2 className="worksTitle">My Portfolio</h2>
@@ -24,7 +26,7 @@ const Works = () => {
       </span>
 
       <div className="cardGrid">
-        {projectData.map((project, index) => (
+        {cardsToShow.map((project, index) => (
           <div className="projectCard" key={index}>
             <img src={project.img} alt="project" className="projectImg" />
             <h3 className="projectTitle">{project.title}</h3>
@@ -41,7 +43,11 @@ const Works = () => {
         ))}
       </div>
 
-      <button className="workBtn">See More</button>
+      {!showAll && projectData.length > 6 && (
+        <button className="workBtn" onClick={() => setShowAll(true)}>
+          See More
+        </button>
+      )}
     </section>
   );
 };
